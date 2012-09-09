@@ -16,6 +16,8 @@ namespace Comms_GUI
         private double Xaxis;
         private double Yaxis;
 
+        private Logging Log = new Logging();
+
         public Form1()
         {
             InitializeComponent();
