@@ -1,5 +1,4 @@
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\Comms_GUI.Form1.resources
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\Comms_GUI.Properties.Resources.resources
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\GenerateResource.write.1.tlog
@@ -7,3 +6,4 @@ C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual P
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\bin\Debug\Comms_GUI.pdb
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\Comms_GUI.exe
 C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\Comms_GUI.pdb
+C:\Users\Ashley\Electronic Engineering\University\Year 3\COMP3020 - Individual Project\COMP3020\Initial_coding\Comms_GUI\Comms_GUI\obj\x86\Debug\Comms_GUI.Comms_GUI.resources

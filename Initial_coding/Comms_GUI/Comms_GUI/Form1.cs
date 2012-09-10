@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Comms_GUI
 {
-    public partial class Form1 : Form
+    public partial class Comms_GUI : Form
     {
         private double total_counter;
 
@@ -18,7 +18,7 @@ namespace Comms_GUI
 
         private Logging Log = new Logging();
 
-        public Form1()
+        public Comms_GUI()
         {
             InitializeComponent();
         }
@@ -54,6 +54,48 @@ namespace Comms_GUI
 
             XY_chart.Series["X_Vs_Y_Angle"].Points.Clear();
             XY_chart.Series["X_Vs_Y_Angle"].Points.AddXY(Xaxis, Yaxis);
+
+            if (((Xaxis < -45) | (Xaxis > 45)) && ((Yaxis < -45) | (Yaxis > 45)))
+            {
+                Log.AddLogEntry(
+                                total_counter.ToString(),
+                                Xaxis.ToString(),
+                                Yaxis.ToString(),
+                                "Xaxis and Yaxis has exceeded 45 degrees tilt"
+                                );
+            }
+            else
+            {
+                if ((Xaxis < -45) | (Xaxis > 45))
+                {
+                    Log.AddLogEntry(
+                                total_counter.ToString(),
+                                Xaxis.ToString(),
+                                Yaxis.ToString(),
+                                "Xaxis has exceeded 45 degrees tilt"
+                                );
+                }
+                else
+                {
+                    if ((Yaxis < -45) | (Yaxis > 45))
+                    {
+                        Log.AddLogEntry(
+                                    total_counter.ToString(),
+                                    Xaxis.ToString(),
+                                    Yaxis.ToString(),
+                                    "Yaxis has exceeded 45 degrees tilt"
+                                    );
+                    }
+                    else
+                    {
+                        Log.AddLogEntry(
+                                total_counter.ToString(),
+                                Xaxis.ToString(),
+                                Yaxis.ToString()
+                                );
+                    }
+                }             
+            }
         }
 
         //Converts to mins and seconds after 60 seconds
@@ -133,5 +175,13 @@ namespace Comms_GUI
         {
             Xaxis = Xaxis_trackBar.Value;
         }
+
+        private void Comms_GUI_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Log.DumpLog();
+        }
+
+
+
     }
 }
