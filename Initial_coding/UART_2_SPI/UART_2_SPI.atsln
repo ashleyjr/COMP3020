@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "UART_2_SPI", "UART_2_SPI\UART_2_SPI.cproj", "{3180C347-F75B-4096-BCB1-72513BEF7C1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3180C347-F75B-4096-BCB1-72513BEF7C1F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{3180C347-F75B-4096-BCB1-72513BEF7C1F}.Debug|AVR.Build.0 = Debug|AVR
+		{3180C347-F75B-4096-BCB1-72513BEF7C1F}.Release|AVR.ActiveCfg = Release|AVR
+		{3180C347-F75B-4096-BCB1-72513BEF7C1F}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
