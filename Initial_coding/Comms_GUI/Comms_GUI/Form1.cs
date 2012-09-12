@@ -15,6 +15,8 @@ namespace Comms_GUI
 
         private double Xaxis;
         private double Yaxis;
+        private double Xaxis_buffer;
+        private double Yaxis_buffer;
 
         private Logging Log = new Logging();
 
@@ -29,6 +31,8 @@ namespace Comms_GUI
             total_counter = 0;
             Xaxis = 0;
             Yaxis = 0;
+            Xaxis_buffer = 0;
+            Yaxis_buffer = 0;
             //Chart setup
             XY_chart.Series["X_Vs_Y_Angle"].BorderWidth = 4;
             XY_chart.ChartAreas[0].AxisX.Maximum = 90;
@@ -55,6 +59,17 @@ namespace Comms_GUI
             XY_chart.Series["X_Vs_Y_Angle"].Points.Clear();
             XY_chart.Series["X_Vs_Y_Angle"].Points.AddXY(Xaxis, Yaxis);
 
+            if((Yaxis != Yaxis_buffer)|(Xaxis != Xaxis_buffer))
+            {
+                this.LogThis();
+                Yaxis_buffer = Yaxis;
+                Xaxis_buffer = Xaxis;
+            }
+        }
+
+        private void LogThis()
+        {
+            //Control flow for logging messages
             if (((Xaxis < -45) | (Xaxis > 45)) && ((Yaxis < -45) | (Yaxis > 45)))
             {
                 Log.AddLogEntry(
@@ -94,7 +109,7 @@ namespace Comms_GUI
                                 Yaxis.ToString()
                                 );
                     }
-                }             
+                }
             }
         }
 

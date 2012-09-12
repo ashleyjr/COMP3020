@@ -27,7 +27,7 @@ namespace Comms_GUI
             int index = 0;
             while (File.Exists(path + ".log"))
             {
-                path = path + index.ToString();
+                path = path + "_" + index.ToString();
                 index++;
             }
             log = File.CreateText(path + ".log");
